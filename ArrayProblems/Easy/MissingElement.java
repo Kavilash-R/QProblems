@@ -1,4 +1,4 @@
-package QProblems.ArrayProblems;
+package QProblems.ArrayProblems.Easy;
 
 public class MissingElement {
     // find the missing element in the array start from 1 to n

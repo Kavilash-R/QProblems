@@ -1,4 +1,4 @@
-package QProblems.ArrayProblems;
+package QProblems.ArrayProblems.Easy;
 
 public class SecondLargest {
     // need to find 2nd largest element in array

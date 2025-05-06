@@ -1,4 +1,4 @@
-package QProblems.ArrayProblems;
+package QProblems.ArrayProblems.Easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;

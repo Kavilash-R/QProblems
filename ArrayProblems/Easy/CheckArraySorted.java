@@ -1,4 +1,4 @@
-package QProblems.ArrayProblems;
+package QProblems.ArrayProblems.Easy;
 
 public class CheckArraySorted {
     // check if the array is sorted or not by the elements are in increasing order
