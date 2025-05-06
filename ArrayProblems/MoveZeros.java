@@ -1,0 +1,56 @@
+package QProblems.ArrayProblems;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MoveZeros {
+    // move zeros to end but don't change the order of non-zero elements in array
+    public static void main(String[] args) {
+        int [] arr = {1,0,0,4,5,0,7,5};
+        // expected output: {1,4,5,7,5,0,0,0}
+
+        System.out.println(Arrays.toString(firstWay(arr)));
+        //System.out.println(secondWay(arr));
+
+    }
+
+    public static int [] firstWay(int [] arr){
+        int zeros =0;
+        List <Integer> list = new ArrayList<>();
+
+        for(int num : arr){
+            if (num == 0){
+                zeros++;
+            }
+            else {
+                list.add(num);
+            }
+        }
+        for(int i=0;i<arr.length-zeros;i++){
+            arr[i] = list.get(i);
+        }
+        for(int i =arr.length-1;i>arr.length-zeros;i--){
+            arr[i] = 0;
+        }
+        return arr;
+    }
+
+    public static ArrayList<Integer> secondWay(int [] arr){
+        int zeros =0;
+        ArrayList <Integer> list = new ArrayList<>();
+
+        for(int num : arr){
+            if (num == 0){
+                zeros++;
+            }
+            else {
+                list.add(num);
+            }
+        }
+        for(int i=0;i<zeros;i++){
+            list.add(0);
+        }
+        return list;
+    }
+}
