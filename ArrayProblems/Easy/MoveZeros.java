@@ -10,8 +10,15 @@ public class MoveZeros {
         int [] arr = {1,0,0,4,5,0,7,5};
         // expected output: {1,4,5,7,5,0,0,0}
 
+        // first way
         System.out.println(Arrays.toString(firstWay(arr)));
+
+        // second way
         //System.out.println(secondWay(arr));
+
+        // third way
+        System.out.println(Arrays.toString(thirdWay(arr)));
+
 
     }
 
@@ -52,5 +59,18 @@ public class MoveZeros {
             list.add(0);
         }
         return list;
+    }
+
+
+    public static int [] thirdWay(int [] arr){
+
+        for (int i =0;i<arr.length-1;i++){
+            if(arr[i] == 0){
+                int temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
+            }
+        }
+        return  arr;
     }
 }
