@@ -1,4 +1,4 @@
-package patterns;
+package QProblems.patterns;
 
 public class pattern9 {
     public static void main(String[] args) {
